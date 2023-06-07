@@ -1,5 +1,7 @@
 # Tech Tests
 
+You will need to create a `.env.production` file to contain the `DATABASE_URL` when you first clone this repo. Ask Niamh for the URL if it has not already been provided for you.
+
 This repo is for mentors to be able to issue timed challenges to mentees.
 
 Below you will see a list of challenges that you can set out for your mentees based on the api. Issue the challenges based on what will benefit them the most at this point. 
