@@ -7,6 +7,7 @@ You will also need to set up `.env.development` and `.env.test` with the associa
 Make sure to setup:
 
 `npm run setup-dbs`
+
 `npm run seed`
 
 Oh! You may have found your first error! 
