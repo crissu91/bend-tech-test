@@ -2,7 +2,7 @@
 
 Guidance for how to use your time:
 
-You have been given this repo as part of a tech-test. Your aim is to have it running. A task will be issued by your mentor to complete, within a time-frame.
+You have been given this repo as part of a tech-test. Your aim is to have a running api.
 
 Once the time is up, you will look through this repo together and potentially work through some issues that you may have faced.
 
