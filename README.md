@@ -1,31 +1,22 @@
 # Tech Tests
 
-You will need to create a `.env.production` file to contain the `DATABASE_URL` when you first clone this repo. Ask Niamh for the URL if it has not already been provided for you.
+You will need to create a `.env.production` file to contain the `DATABASE_URL` when you first clone this repo. Ask your mentor for the URL if it has not already been provided for you.
 
-This repo is for mentors to be able to issue timed challenges to mentees.
+You will also need to set up `.env.development` and `.env.test` with the associated names (check `setup_dbs.sql` for db names).
 
-Below you will see a list of challenges that you can set out for your mentees based on the api. Issue the challenges based on what will benefit them the most at this point. 
-
-Api link: https://reading-books-api.onrender.com/api/bookshops 
-
-## set-up (for testing)
+Make sure to setup:
 
 `npm run setup-dbs`
-`npm run seed` (will not work until section 1 is completed, so will need to be completed by mentor if skipping)
+`npm run seed`
+
+Oh! You may have found your first error! 
+1. Fix the error - why doesn't it work?
+
 `npm run test`
 
-#### 1: seed.js
 
-a: wrong column names for insertBooks (book_title = book_name // book_author = book_writer)
+Guidance for how to use your time:
 
-b: missing 'RETURNING *' on insertBookshops
+You have been given this repo as part of a tech-test. Your aim is to have it running. A task will be issued by your mentor to complete, within a time-frame.
 
-#### 2: models
-
-a: sql injection in the selectBookshopById model
-
-#### 3: building from nothing
-
-a: build getBookById endpoint
-
-b: build error tests
+Once the time is up, you will look through this repo together and potentially work through some issues that you may have faced.
