@@ -14,12 +14,12 @@ You will also need to set up `.env.development` and `.env.test` with the associa
 
 Make sure to setup:
 
-`npm run setup-dbs`
+1. `npm run setup-dbs`
 
-`npm run seed`
+2. `npm run seed`
 
 Oh! You may have found your first error! 
-1. Fix the error - why doesn't it work?
+You must: Fix the error - why doesn't it work?
 
-`npm run test`
+3. `npm run test`
 
