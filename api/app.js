@@ -2,7 +2,7 @@ const express = require('express')
 const app = express();
 const cors = require('cors')
 
-const {getBooks} = require('./controllers/books.controller')
+const {getBooks, getBookById} = require('./controllers/books.controller')
 const {getBookshops, getBookshopById} = require('./controllers/bookshops.controller')
 const {allPathErrors, handleCustomErrors, handleInternalServerErrors} = require('./controllers/errors.controller')
 
@@ -13,7 +13,7 @@ app.get('/api/books', getBooks)
 
 app.get('/api/bookshops', getBookshops)
 app.get('/api/bookshops/:id', getBookshopById)
-
+app.get('/api/books/:id', getBookById)
 
 app.all('*', allPathErrors)
 app.use(handleCustomErrors)
