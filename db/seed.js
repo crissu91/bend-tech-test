@@ -32,7 +32,7 @@ function createBookshops() {
 
 function insertBooks(books) {
     const sortedBooks = arrangeData(books)
-    const insertValues = format('INSERT INTO books (book_title, book_author) VALUES %L RETURNING *;', sortedBooks)
+    const insertValues = format('INSERT INTO books (book_name, book_writer) VALUES %L RETURNING *;', sortedBooks)
     return db.query(insertValues)
 }
 
