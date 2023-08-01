@@ -8,7 +8,7 @@ exports.selectBookshops = () => {
 }
 
 exports.selectBookshopById = (id) => {
-    return db.query(`SELECT * FROM bookshops WHERE bookshop_id = ${id};`)
+    return db.query(`SELECT * FROM bookshops WHERE bookshop_id = $1;`, [id])
     .then((bookshop) => {
         return bookshop.rows[0]
     })
