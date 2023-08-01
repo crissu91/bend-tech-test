@@ -80,3 +80,18 @@ describe('GET /api/bookshops/1', () => {
         })
     })
 })
+describe ('GET /api/books/:id', () =>{
+    test('200: should respond with a book object that matches the id sent ', () =>{
+        return request(app)
+        .get('/api/books/1')
+        .expect(200)
+        .then(({body}) => {
+            expect(body.book.length === 1);
+            expect(body.book).toMatchObject({
+                book_id: 1,
+                book_name: 'Frankenstein',
+                book_writer: 'Mary Shelley',
+            })
+        })
+    })
+})
